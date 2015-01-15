@@ -1,0 +1,93 @@
+body {
+	background:url("./bg-black.png");
+	background-color:#222;
+	margin:0;
+}
+.outerwrapper {
+	position:relative;
+	padding-top:5px; /* centering the dotted border between the strips */
+	border-bottom:1px dotted #333;
+}
+.outerwrapper:first-child {
+	margin-top:4px;
+}
+.outerwrapper:last-child {
+	border-bottom:none;
+}
+.linkwrapper {
+	position:absolute;
+	width:auto;
+	height:8px; /* position of text relative to img, aligned on bottom */
+	padding:0;
+	bottom:0; /* position of text relative to img, aligned on bottom */
+}
+.center {
+	/* width:1040px; */
+	margin:0 auto;
+	text-align:center;
+}
+img {
+	background-color:#fff;
+	padding:14px;
+	margin:4px;
+	border-radius:6px;
+	max-width:100%; /* automatic scaling of images */
+	max-height:100%; /* automatic scaling of images */
+}
+a.rotate {
+	-webkit-transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg);
+	transform:rotate(-90deg);
+	-webkit-transform-origin:0 0;
+	-ms-transform-origin:0 0;
+	transform-origin:0 0;
+	float:left;
+	background-color:#fff;
+	background:url("./bg-white.png");
+	color:#aaa;
+	padding:14px;
+	border-top:none;
+	border-radius:0 0 6px 6px;
+	-webkit-transition:border-top 100ms ease-out, color 500ms ease-in;
+	transition:border-top 100ms ease-in-out, color 500ms ease-in;
+	font-family:"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	font-size:8pt;
+	text-transform:uppercase;
+	text-decoration:none;
+	white-space:nowrap; /* = nobr */
+}
+a.rotate:hover {
+	color:#555;
+	border-top:8px solid #aaa;
+}
+
+@media screen and (max-width:1040px) { /* use width of widest comic strip here, incl. margin/padding/border */
+	body {
+		margin:0 20px 0 0;
+		padding:0;
+	}
+	.outerwrapper {
+		border-bottom:0;
+		padding-top:2px;
+	}
+	.outerwrapper:first-child {
+		padding-top:0;
+		margin-top:0;
+	}
+	.outerwrapper:last-child {
+		padding-bottom:0;
+		margin-bottom:0;
+	}
+	.linkwrapper {
+		display:none;
+	}
+	img {
+		height:auto !important;
+		padding:8px;
+		margin:2px;
+	}
+	img:last-child {
+		margin-bottom:0;
+	}
+}
+
