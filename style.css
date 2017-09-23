@@ -17,7 +17,7 @@ body {
 .linkwrapper {
 	position:absolute;
 	width:auto;
-	height:8px; /* position of text relative to img, aligned on bottom */
+	height:9px; /* position of text relative to img, aligned on bottom */
 	padding:0;
 	bottom:0; /* position of text relative to img, aligned on bottom */
 }
@@ -61,7 +61,7 @@ a.rotate:hover {
 	border-top:8px solid #aaa;
 }
 
-@media screen and (max-width:1040px) { /* use width of widest comic strip here, incl. margin/padding/border */
+@media screen and (max-width:1110px) { /* use width of widest comic strip here, incl. margin/padding/border */
 	body {
 		margin:0 20px 0 0;
 		padding:0;
@@ -90,4 +90,3 @@ a.rotate:hover {
 		margin-bottom:0;
 	}
 }
-
